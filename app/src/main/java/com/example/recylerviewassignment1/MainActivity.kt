@@ -3,6 +3,7 @@ package com.example.recylerviewassignment1
 import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
@@ -36,8 +37,9 @@ class MainActivity : AppCompatActivity(),UserAdapter.onItemClickListner {
         userList.add(User(R.drawable.bakkar,"Kazi Bakkar","01837705634","Harala","Harala",
             "Chattogram","Chattogram","Bangladesh"))
 
-        userList.add(User(R.drawable.shama,"Rafia Shama","01837705608","Doterhut","Doterhut",
-            "Noakhali","Chattogram","Bangladesh"))
+
+
+
 
         userAdapter = UserAdapter(userList,this)
         recyclerView.adapter = userAdapter
@@ -93,6 +95,8 @@ class MainActivity : AppCompatActivity(),UserAdapter.onItemClickListner {
         cancelBtnalert.setOnClickListener{
             dialog.dismiss()
         }
+
+
 
         dialog.show()
 
